@@ -14,6 +14,7 @@ import { RecentSales } from '@/components/ui/RecentSales';
 import { CATEGORY_DATA } from '@/lib/constants';
 import { Lookbook } from '@/components/home/Lookbook';
 import { FAQ } from '@/components/home/FAQ';
+import { HowItWorks } from '@/components/home/HowItWorks';
 
 type ViewState = 'HOME' | 'GALLERY' | 'CUSTOMIZE';
 
@@ -55,6 +56,7 @@ export default function Home() {
       {view === 'HOME' && (
         <>
           <Hero />
+          <HowItWorks />
           <SocialProofBar />
           <CategoryGrid onSelectCategory={navigateToGallery} />
           <Lookbook />

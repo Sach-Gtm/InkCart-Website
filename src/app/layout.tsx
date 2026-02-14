@@ -8,9 +8,16 @@ const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 const plus = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-plus" });
 
 export const metadata: Metadata = {
-  title: "InkCart – Custom Prints Online",
-  description: "Premium custom T-shirts, Mugs, and Accessories. No account needed—order directly via WhatsApp.",
-  keywords: "Custom T-shirt printing India, Personalized Mugs, Online Custom Merch Store",
+  title: "InkCart | Premium Custom Merchandise",
+  description: "High-quality custom T-shirts, Hoodies, and Mugs. No account needed—order directly via WhatsApp. 24hr dispatch nationwide.",
+  keywords: "Custom T-shirt India, Personalized Hoodies, Print on Demand India, InkCart",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  themeColor: "#007AFF",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "InkCart",
+  },
 };
 
 export default function RootLayout({

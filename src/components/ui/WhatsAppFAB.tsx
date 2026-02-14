@@ -7,7 +7,7 @@ import { MessageCircle } from 'lucide-react';
 export const WhatsAppFAB = () => {
     const openWhatsApp = () => {
         const text = encodeURIComponent("Hi InkCart! I have a question about customizing a product.");
-        window.open(`https://wa.me/919999999999?text=${text}`, '_blank');
+        window.open(`https://wa.me/919355446497?text=${text}`, '_blank');
     };
 
     return (

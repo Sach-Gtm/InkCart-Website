@@ -28,6 +28,13 @@ export const Hero = () => {
         }
     };
 
+    const scrollToHowItWorks = () => {
+        const section = document.getElementById('how-it-works');
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <section className="relative overflow-hidden bg-white pt-12 pb-24 md:pt-20 md:pb-32">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,7 +78,10 @@ export const Hero = () => {
                                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </button>
 
-                            <button className="inline-flex items-center justify-center px-10 py-5 bg-white text-carbon font-black border-2 border-carbon/10 rounded-2xl hover:bg-carbon/5 transition-all active:scale-95">
+                            <button
+                                onClick={scrollToHowItWorks}
+                                className="inline-flex items-center justify-center px-10 py-5 bg-white text-carbon font-black border-2 border-carbon/10 rounded-2xl hover:bg-carbon/5 transition-all active:scale-95 transition-all"
+                            >
                                 How it Works
                             </button>
                         </div>
